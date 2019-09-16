@@ -3,7 +3,7 @@ using Xunit;
 
 namespace MasteryHospital.Tests
 {
-    public class UnitTest1
+    public class MasteryHospitalTests
     {
         [Fact]
         public void Test1()
