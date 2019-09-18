@@ -18,6 +18,11 @@ namespace MasteryHospital
             PatientHealth = 10;
         }
 
+        public void DrawBlood()
+        {
+            PatientBlood--;
+        }
+
         public void AddPatient()
         {
             Console.WriteLine("Add a new Patient");
