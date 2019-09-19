@@ -14,6 +14,7 @@ namespace MasteryHospital
             {
 
             Console.WriteLine("Welcome to Mastery Hospital.");
+            
             Console.WriteLine("To Enter a Patient press 'A'.");
             Console.WriteLine("To View Patients in the hospital, press 'P'.");
             Console.WriteLine("To view the status of the patients, press 'S'.");

@@ -6,7 +6,8 @@ namespace MasteryHospital
 {
     class Hospital
     {
-        public List<Patient> patientsInHospital = new List<Patient>();
+        
+      
 
         public void AddPatients(Patient patient)
         {

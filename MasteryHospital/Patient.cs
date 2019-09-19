@@ -12,7 +12,7 @@ namespace MasteryHospital
         public int PatientHealth { get; set; }
 
 
-        public Patient()
+        public Patient(string PatientName, int PatientBlood, int PatientHealth)
         {
             PatientBlood = 20;
             PatientHealth = 10;
@@ -38,6 +38,28 @@ namespace MasteryHospital
         {
             Console.WriteLine("Patienet blood level:" + PatientBlood);
             Console.WriteLine("Patient health level:" + PatientHealth);
+        }
+
+
+        //Lists
+
+        public List<Patient> patientsInHospital = new List<Patient>();
+
+        
+        
+        //Add To List 
+
+
+        public void AddPatientToPatientList()
+        {
+            patientsInHospital.Add(new Patient("Jordan Jordanson", 20, 10));
+            patientsInHospital.Add(new Patient("Frank Johnson", 20, 10));
+            patientsInHospital.Add(new Patient("Nancy Williams", 20, 10));
+            patientsInHospital.Add(new Patient("Felix Caterson", 20, 10));
+            patientsInHospital.Add(new Patient("Gina Smith", 20, 10));
+
+
+
         }
 
     }
