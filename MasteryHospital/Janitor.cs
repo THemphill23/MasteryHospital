@@ -4,22 +4,24 @@ using System.Text;
 
 namespace MasteryHospital
 {
-    class Receptionist : Employee
+    class Janitor: Employee
     {
         public string Occupation { get; set; }
-        public Receptionist() : base("Michelle", "Maximus", 0002, 45000, false)
+        public Janitor() : base("George", "Festis", 0001, 40000, false)
         {
-            Occupation = "Receptionist";
+            Occupation = "Janitor";
         }
 
-        public void ReceptionistInfo()
+        public void JanitorInfo()
         {
             Console.WriteLine(EmployeeFirstName + " " + EmployeeLastName + ", " + EmployeeTitle);
         }
 
-        public void AnswersPhone()
+        public void SweepFloors()
         {
 
         }
+
+        
     }
 }

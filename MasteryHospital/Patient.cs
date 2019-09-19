@@ -7,33 +7,40 @@ namespace MasteryHospital
     public class Patient
     {
 
-        public string PatientName { get; set; }
-        public int PatientBlood { get; set; }
-        public int PatientHealth { get; set; }
+        public string PatientFirstName { get; set; }
+        public string PatientLastName { get; set; }
+        public int BloodLevel { get; set; }
+        public int HealthLevel { get; set; }
 
 
         public Patient()
         {
-            PatientBlood = 20;
-            PatientHealth = 10;
+            BloodLevel = 20;
+            HealthLevel = 10;
         }
 
         public void AddPatient()
         {
-            Console.WriteLine("Add a new Patient");
-             PatientName = Console.ReadLine().ToLower();
+            Console.WriteLine("Let's add a new patient.");
+            Console.WriteLine("Enter patient first name:");
+             PatientFirstName = Console.ReadLine().ToLower();
+
+            Console.WriteLine("Enter patient last name:");
+            PatientLastName = Console.ReadLine().ToLower();
 
         }
          public void PatientInfo()
         {
-            Console.WriteLine(PatientName);
+            Console.WriteLine(PatientFirstName + " " + PatientLastName);
         }
 
         public void PatientStatus()
         {
-            Console.WriteLine("Patienet blood level:" + PatientBlood);
-            Console.WriteLine("Patient health level:" + PatientHealth);
+            Console.WriteLine("Patient blood level:" + BloodLevel);
+            Console.WriteLine("Patient health level:" + HealthLevel);
         }
+
+        
 
     }
 }

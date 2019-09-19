@@ -6,5 +6,6 @@ namespace MasteryHospital
 {
     class Doctor
     {
+       
     }
 }
