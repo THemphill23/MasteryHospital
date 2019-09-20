@@ -34,9 +34,18 @@ namespace MasteryHospital
 
         public void EmployeeInfo()
         {
-                Console.WriteLine($"Employyee {EmployeeName} {IDNumber} {Job}");
+                Console.WriteLine($"Employyee {EmployeeName} {IDNumber} {Job} {Salary} {Paid}");
         }
 
+        public void PayEmployees()
+        {
+            Paid = true;
+            if (true)
+            {
+                Console.WriteLine("You have been paid. Wait until next month.");
+            }
+
+        }
 
 
 

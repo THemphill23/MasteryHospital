@@ -28,6 +28,7 @@ namespace MasteryHospital
 
                 Console.WriteLine("Are you an employee or patient?");
                 Console.WriteLine("Press 'E' for employee or 'P' for patient.");
+                Console.WriteLine("Press 'C' to pay the employees.");
                 Console.WriteLine("Press 'X' to exit program.");
                 string input = Console.ReadLine().ToLower();
                 switch (input)
@@ -40,6 +41,11 @@ namespace MasteryHospital
                     case "p":
                         Console.WriteLine("Welcome patient.");
                         hospital.ShowListOfPatients();
+                        break;
+
+                    case "c":
+                        Console.WriteLine("You have been payed.");
+                        hospital.PayAllEmployees();
                         break;
 
                     case "x":
