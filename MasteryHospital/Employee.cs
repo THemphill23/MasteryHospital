@@ -34,7 +34,7 @@ namespace MasteryHospital
 
         public void EmployeeInfo()
         {
-            Console.WriteLine(EmployeeName);
+                Console.WriteLine($"Employyee {EmployeeName} {IDNumber} {Job}");
         }
 
 

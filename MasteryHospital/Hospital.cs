@@ -45,6 +45,25 @@ namespace MasteryHospital
             foreach (Employee employee in employeesInHospital)
                 employee.EmployeeInfo();
         }
+
+        public void ShowListOfPatients()
+        {
+            foreach (Patient patient in patientsInHospital)
+                patient.PatientInfo();
+        }
+
+        //public void ShowListOfPatients(List<Patient> patientsInHospital)
+        //{
+
+        //    foreach (Patient patient in patientsInHospital)
+        //    {
+        //        Console.WriteLine($"Patient {PatientName} {PatientBlood} {PatientHealth}");
+        //    }
+        //    int selectedpatientsInHospitalNumber = Convert.ToInt32(Console.ReadLine());
+
+
+        //    return hospital.allpatientsInHospital[selectedpatientsInHospital - 1];
+        //}
         //public List<Doctor> doctorsList = new List<Doctor>()
         //{
 

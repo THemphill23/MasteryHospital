@@ -39,6 +39,7 @@ namespace MasteryHospital
 
                     case "p":
                         Console.WriteLine("Welcome patient.");
+                        hospital.ShowListOfPatients();
                         break;
 
                     case "x":
