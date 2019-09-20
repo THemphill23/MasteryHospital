@@ -6,19 +6,18 @@ namespace MasteryHospital
 {
     class Janitor : Employee
     {
-        public string Occupation { get; set; }
         public bool Sweeping { get; set; }
         
         
+        public Janitor()
+        {
+        }
 
         public Janitor(string employeeName, int IDNumber, int Salary, bool Paid, bool Sweeping) : base("George Festits", 0035, 0001, false, true)
         {
             Sweeping = true;
         }
 
-        public Janitor()
-        {
-        }
 
 
 

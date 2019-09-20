@@ -8,13 +8,13 @@ namespace MasteryHospital
     {
         public bool Talking { get; set; }
 
+        public Receptionist()
+        {
+        }
+
         public Receptionist(string employeeName, int IDNumber, int Salary, bool Paid, bool Talking) : base("Michelle Maximus", 0035, 0001, false, false)
         {
             Talking = true;
-        }
-
-        public Receptionist()
-        {
         }
 
 

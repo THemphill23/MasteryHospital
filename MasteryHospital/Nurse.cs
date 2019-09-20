@@ -9,6 +9,9 @@ namespace MasteryHospital
 
         public int NumberOfPatients { get; set; }
 
+        public Nurse()
+        {
+        }
 
         public Nurse(string employeeName, int IDNumber, int Salary, bool Paid, int NumberOfPatients) : base("Melissa Jordan", 0098, 0001, false, 100)
         {
@@ -17,9 +20,6 @@ namespace MasteryHospital
 
         }
 
-        public Nurse()
-        {
-        }
 
 
 

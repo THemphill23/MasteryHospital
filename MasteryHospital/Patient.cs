@@ -11,6 +11,7 @@ namespace MasteryHospital
         public int PatientBlood { get; set; }
         public int PatientHealth { get; set; }
 
+        public List<Patient> patientsInHospital = new List<Patient>();
 
         public Patient(string PatientName, int PatientBlood, int PatientHealth)
         {
@@ -27,12 +28,6 @@ namespace MasteryHospital
             PatientBlood--;
         }
 
-        public void AddPatient()
-        {
-            Console.WriteLine("Add a new Patient");
-             PatientName = Console.ReadLine().ToLower();
-
-        }
          public void PatientInfo()
         {
             Console.WriteLine(PatientName);
@@ -40,19 +35,9 @@ namespace MasteryHospital
 
         public void PatientStatus()
         {
-           
             Console.WriteLine("Patienet blood level:" + PatientBlood);
             Console.WriteLine("Patient health level:" + PatientHealth);
         }
-
-
-        //Lists
-
-        //public List<Patient> patientsInHospital = new List<Patient>();
-
-        
-        
-        //Add To List 
 
 
         public void AddPatientToPatientList()

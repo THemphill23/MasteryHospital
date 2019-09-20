@@ -12,6 +12,7 @@ namespace MasteryHospital
         Janitor janitor = new Janitor();
         private bool v;
         private int v1;
+        private string v2;
 
 
         //Properties
@@ -35,7 +36,7 @@ namespace MasteryHospital
         {
         }
 
-        public Employee(string employeeName, int IDNumber, int Salary, bool Paid, string v) : this(employeeName, IDNumber, Salary, Paid)
+        public Employee(string employeeName, int IDNumber, int Salary, bool Paid, string v2) : this(employeeName, IDNumber, Salary, Paid)
         {
             this.v = v;
         }

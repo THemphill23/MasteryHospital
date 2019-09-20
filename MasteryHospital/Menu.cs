@@ -44,7 +44,6 @@ namespace MasteryHospital
 
             void PatientMenu()
             {
-                Console.WriteLine("To Enter a patient press 'A'.");
                 Console.WriteLine("To view patients in the hospital, press 'P'.");
                 Console.WriteLine("To view the status of the patients, press 'S'.");
                 string patientChoice = Console.ReadLine();
@@ -52,13 +51,10 @@ namespace MasteryHospital
                 switch (patientChoice)
                 {
 
-                    case "a":
-                        patient = new Patient();
-                        patient.AddPatient();
-                        hospital.AddPatients(patient);
-                        break;
+                    
 
                     case "p":
+                        hospital.AddPatients(patient);
                         hospital.ShowListOfPatients();
                         break;
 

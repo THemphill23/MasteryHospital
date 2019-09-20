@@ -15,7 +15,7 @@ namespace MasteryHospital
 
         public void AddPatients(Patient patient)
         {
-            patientsInHospital.Add(patient);
+            patient.AddPatientToPatientList();
         }
 
         public void ShowListOfPatients()
@@ -38,12 +38,6 @@ namespace MasteryHospital
                 employee.EmployeeInfo();
         }
         
-
-
-        
-
-       
-
 
     }
 }
