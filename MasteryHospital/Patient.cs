@@ -28,6 +28,11 @@ namespace MasteryHospital
                 Console.WriteLine($"Patient {PatientName} {PatientBlood} {PatientHealth}");
         }
 
+        public void DrawBlood()
+        {
+            PatientBlood --;
+        }
+
         //public void DrawBlood()
         //{
         //    PatientBlood--;

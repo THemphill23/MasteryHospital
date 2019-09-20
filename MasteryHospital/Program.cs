@@ -12,7 +12,7 @@ namespace MasteryHospital
 
 
 
-            Patient newPatient = new Patient();
+            Patient patient = new Patient();
             Employee employee = new Employee();
             Hospital hospital = new Hospital();
 
@@ -29,6 +29,7 @@ namespace MasteryHospital
                 Console.WriteLine("Are you an employee or patient?");
                 Console.WriteLine("Press 'E' for employee or 'P' for patient.");
                 Console.WriteLine("Press 'C' to pay the employees.");
+                Console.WriteLine("Press 'B' to draw a patient's blood.");
                 Console.WriteLine("Press 'X' to exit program.");
                 string input = Console.ReadLine().ToLower();
                 switch (input)
@@ -46,6 +47,11 @@ namespace MasteryHospital
                     case "c":
                         Console.WriteLine("You have been payed.");
                         hospital.PayAllEmployees();
+                        break;
+
+                    case "b":
+                        Console.WriteLine("You have drawn blood.");
+                        hospital.DrawAllBlood();
                         break;
 
                     case "x":

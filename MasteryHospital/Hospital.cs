@@ -58,6 +58,13 @@ namespace MasteryHospital
                 employee.PayEmployees();
         }
 
+        public void DrawAllBlood()
+        {
+            foreach (Patient patient in patientsInHospital)
+                patient.DrawBlood();
+            
+        }
+
         //public void ShowListOfPatients(List<Patient> patientsInHospital)
         //{
 

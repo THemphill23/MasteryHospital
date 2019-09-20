@@ -47,7 +47,10 @@ namespace MasteryHospital
 
         }
 
+        public virtual void DrawBlood()
+        {
 
+        }
 
 
         }
