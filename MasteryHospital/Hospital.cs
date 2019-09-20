@@ -4,10 +4,14 @@ using System.Text;
 
 namespace MasteryHospital
 {
-    class Hospital
+    public class Hospital
     {
-        
-      
+
+        public Employee employee = new Employee();
+        public Patient patient = new Patient();
+
+        public List<Patient> patientsInHospital = new List<Patient>();
+        public List<Employee> employeesInHospital = new List<Employee>();
 
         public void AddPatients(Patient patient)
         {
@@ -27,5 +31,19 @@ namespace MasteryHospital
                 Console.WriteLine();
             }
         }
+
+        public void ShowListOfEmployees()
+        {
+            foreach (Employee employee in employeesInHospital)
+                employee.EmployeeInfo();
+        }
+        
+
+
+        
+
+       
+
+
     }
 }

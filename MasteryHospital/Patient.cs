@@ -4,7 +4,7 @@ using System.Text;
 
 namespace MasteryHospital
 {
-    public class Patient
+    public class Patient : Hospital
     {
 
         public string PatientName { get; set; }
@@ -16,6 +16,10 @@ namespace MasteryHospital
         {
             PatientBlood = 20;
             PatientHealth = 10;
+        }
+
+        public Patient()
+        {
         }
 
         public void DrawBlood()
@@ -36,6 +40,7 @@ namespace MasteryHospital
 
         public void PatientStatus()
         {
+           
             Console.WriteLine("Patienet blood level:" + PatientBlood);
             Console.WriteLine("Patient health level:" + PatientHealth);
         }
@@ -43,7 +48,7 @@ namespace MasteryHospital
 
         //Lists
 
-        public List<Patient> patientsInHospital = new List<Patient>();
+        //public List<Patient> patientsInHospital = new List<Patient>();
 
         
         
@@ -62,5 +67,7 @@ namespace MasteryHospital
 
         }
 
+
+        
     }
 }

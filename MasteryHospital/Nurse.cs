@@ -4,17 +4,21 @@ using System.Text;
 
 namespace MasteryHospital
 {
-    class Nurse : Employees
+    class Nurse : Employee
     {
 
         public int NumberOfPatients { get; set; }
 
 
-        public Nurse(string employeeName, int IDNumber, int Salary, bool Paid, int NumberOfPatients) : base("Melissa Jordan", 0098, 0001, false)
+        public Nurse(string employeeName, int IDNumber, int Salary, bool Paid, int NumberOfPatients) : base("Melissa Jordan", 0098, 0001, false, 100)
         {
 
            NumberOfPatients = 100;
 
+        }
+
+        public Nurse()
+        {
         }
 
 

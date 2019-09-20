@@ -5,15 +5,19 @@ using System.Text;
 
 namespace MasteryHospital
 {
-    public class Doctor : Employees
+    public class Doctor : Employee
     {
 
         public string Specialty { get; set; }
+    
 
-
-        public Doctor(string employeeName, int IDNumber, int Salary, bool Paid, string Specialty) : base("Dr. Victoria Johnson", 0035, 0001, false)
+        public Doctor(string employeeName, int IDNumber, int Salary, bool Paid, string Specialty) : base("Dr. Victoria Johnson", 0035, 0001, false, "hand")
         {
             Specialty = "hand";
+        }
+
+        public Doctor()
+        {
         }
 
 
