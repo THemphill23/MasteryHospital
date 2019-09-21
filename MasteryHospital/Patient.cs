@@ -25,49 +25,13 @@ namespace MasteryHospital
 
         public void PatientInfo()
         {
-                Console.WriteLine($"Patient {PatientName} {PatientBlood} {PatientHealth}");
+                Console.WriteLine($" {PatientName} {PatientBlood} {PatientHealth}");
         }
 
         public void DrawBlood()
         {
             PatientBlood --;
         }
-
-        //public void DrawBlood()
-        //{
-        //    PatientBlood--;
-        //}
-
-        // public void PatientInfo()
-        //{
-        //}
-
-        //public void PatientStatus()
-        //{
-        //    Console.WriteLine("Patienet blood level:" + PatientBlood);
-        //    Console.WriteLine("Patient health level:" + PatientHealth);
-        //}
-
-
-        //public void AddPatientToPatientList()
-        //{
-
-
-        //patient.PatientInfo();
-
-        //}
-
-        //public void ShowListOfPatients(List<Patient> patientsInHospital)
-        //{
-
-        //    foreach (Patient patient in patientsInHospital)
-            
-        //        Console.WriteLine($"Patient {PatientName} {PatientBlood} {PatientHealth}");
-            
-        //}
-
-
-
 
 
     }

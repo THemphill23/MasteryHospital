@@ -7,8 +7,6 @@ namespace MasteryHospital
     public class Employee
     {
         
-
-
         public string EmployeeName { get; set; }
         public int Salary { get; set; }
         public int IDNumber { get; set; }
@@ -34,16 +32,12 @@ namespace MasteryHospital
 
         public void EmployeeInfo()
         {
-                Console.WriteLine($"Employyee {EmployeeName} {IDNumber} {Job} {Salary} {Paid}");
+                Console.WriteLine($"{Job}, {EmployeeName}, IDNumber {IDNumber}, {Job}, {Salary}, {Paid}");
         }
 
         public void PayEmployees()
         {
             Paid = true;
-            if (true)
-            {
-                Console.WriteLine("You have been paid. Wait until next month.");
-            }
 
         }
 

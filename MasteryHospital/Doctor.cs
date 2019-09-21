@@ -20,6 +20,11 @@ namespace MasteryHospital
         }
 
 
+        public override void DrawBlood()
+        {
+            //PatientBlood--;
+        }
+
 
     }
 }
